@@ -7,12 +7,12 @@ function addTask() {
   const li = document.createElement("li");
   li.textContent = taskInput.value;
 
-  // Mark as completed on click
+  
   li.addEventListener("click", () => {
     li.classList.toggle("completed");
   });
 
-  // Delete button
+  
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "X";
   deleteBtn.onclick = () => li.remove();
